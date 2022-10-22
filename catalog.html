@@ -7,7 +7,7 @@
 <body>
 <header class="main-header">
   <a class="main-header-logo" href="index.html">
-    <img class="logo" src="#" alt="Логотип сайта городка Седона">
+    <img class="logo" src="images/icons/logo.svg" width="140" height="70" alt="Логотип сайта городка Седона.">
   </a>
   <nav class="navigation">
     <ul class="navigation-list">
@@ -60,7 +60,7 @@
     <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
       <fieldset class="catalog-filter-group">
-        <legend class="atalog-filter-title">Инфраструктура:</legend>
+        <legend class="catalog-filter-title">Инфраструктура:</legend>
         <ul class="catalog-filter-list">
           <li class="catalog-filter-item">
             <label class="control">
@@ -76,7 +76,7 @@
           </li>
           <li class="catalog-filter-item">
             <label class="control">
-              <input class="control-input" type="checkbox" name="Wi-Fi">
+              <input class="control-input" type="checkbox" name="wi-fi">
               Wi-Fi
             </label>
           </li>
@@ -112,6 +112,8 @@
       <p class="catalog-sorting-result">Найдено гостиниц: <span class="catalog-sorting-result-count">38</span></p>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешевые</option>
+        <option value="expensive">Сначала дорогое</option>
+        <option value="popular">Сначала популярное</option>
       </select>
       <a class="catalog-button catalog-button-pressing" href="#">
         <span class="visually-hidden">Показать карточки</span>
@@ -126,7 +128,7 @@
     <ul class="product-list">
       <li class="product-card">
         <a class="product-card-link" href="#">
-          <img class="product-card-image" src="#" alt="Вид Amara Resort & Spa">
+          <img class="product-card-image" src="images/hotel/amara-resort-&-spa.jpg" width="300" height="212" alt="Вид Amara Resort & Spa.">
           <h3 class="product-card-title">Amara Resort & Spa</h3>
         </a>
         <span class="housing-type">Гостиница</span>
@@ -134,13 +136,13 @@
         <a class="product-card-button button" href="#">подробнее</a>
         <button class="button-favorites" type="button">в избранное</button>
         <div class="product-card-star">
-          <span class="isually-hidden">Четыре звезды</span>
+          <span class="visually-hidden">Четыре звезды</span>
         </div>
         <span class="product-card-rating">Рейтинг: 8,5</span>
       </li>
       <li class="product-card">
         <a class="product-card-link" href="#">
-          <img class="product-card-image" src="#" alt="Вид Villas at Poco Diablo">
+          <img class="product-card-image" src="images/hotel/villas-at-poco-diablo.jpg" width="300" height="212" alt="Вид Villas at Poco Diablo.">
           <h3 class="product-card-title">Villas at Poco Diablo</h3>
         </a>
         <span class="housing-type">Гостиница</span>
@@ -148,13 +150,13 @@
         <a class="product-card-button button" href="#">подробнее</a>
         <button class="button-favorites-pick" type="button">в избранном</button>
         <div class="product-card-star">
-          <span class="isually-hidden">Четыре звезды</span>
+          <span class="visually-hidden">Четыре звезды</span>
         </div>
         <span class="product-card-rating">Рейтинг: 9,2</span>
       </li>
       <li class="product-card">
         <a class="product-card-link" href="#">
-          <img class="product-card-image" src="#" alt="Вид Desert Quail Inn">
+          <img class="product-card-image" src="images/hotel/desert-quail-Inn.jpg" width="300" height="212" alt="Вид Desert Quail Inn.">
           <h3 class="product-card-title">Desert Quail Inn</h3>
         </a>
         <span class="housing-type">Гостиница</span>
@@ -162,13 +164,13 @@
         <a class="product-card-button button" href="#">подробнее</a>
         <button class="button-favorites" type="button">в избранное</button>
         <div class="product-card-star">
-          <span class="isually-hidden">Три звезды</span>
+          <span class="visually-hidden">Три звезды</span>
         </div>
         <span class="product-card-rating">Рейтинг: 6,9</span>
       </li>
       <li class="product-card">
         <a class="product-card-link" href="#">
-          <img class="product-card-image" src="#" alt="Вид GreenTree Inn">
+          <img class="product-card-image" src="images/hotel/greentree-Inn.jpg" width="300" height="212" alt="Вид GreenTree Inn.">
           <h3 class="product-card-title">GreenTree Inn</h3>
         </a>
         <span class="housing-type">Гостиница</span>
@@ -176,7 +178,7 @@
         <a class="product-card-button button" href="#">подробнее</a>
         <button class="button-favorites" type="button">в избранное</button>
         <div class="product-card-star">
-          <span class="isually-hidden">Две звезды</span>
+          <span class="visually-hidden">Две звезды</span>
         </div>
         <span class="product-card-rating">Рейтинг: 5,0</span>
       </li>
@@ -195,7 +197,7 @@
         <a class="pagination-link" href="#">4</a>
       </li>
       <li class="pagination-item">
-        <a class="pagination-link" href="#">...</a>
+        <span class="pagination-link">...</span>
       </li>
       <li class="pagination-item">
         <a class="pagination-link" href="#">10</a>
@@ -240,7 +242,7 @@
   <section class="htmlacademy">
     <h2 class="visually-hidden">html academy"</h2>
     <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-      <img class="htmlacademy-logo" src="#" alt="Логотип html academy>
+      <img class="htmlacademy-logo" src="images/icons/html-academy.svg" width="114.9" height="32.9" alt="Логотип html academy.">
     </a>
   </section>
 </footer>
