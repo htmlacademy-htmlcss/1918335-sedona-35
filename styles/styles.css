@@ -113,13 +113,15 @@ body {
 .advantages-preface {
   display: flex;
   flex-direction: column;
+  padding-top: 69px;
+  padding-bottom: 90px;
 }
 .advantages-title {
-  margin-top: 69px;
-  margin-bottom: 25px;
+  margin: 0;
 }
 .advantages-text {
-  margin-bottom: 90px;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 .advantages-list {
   display: flex;
@@ -179,10 +181,11 @@ body {
   padding-bottom: 111px;
 }
 .advantages-item-icons {
+  padding-top: 182px;
   padding-bottom: 81px;
 }
 .advantages-item-icons .advantages-item-title {
-  margin-top: 182px;
+  margin: 0;
 }
 .advantages-item-icons .advantages-item-description {
   margin-top: 30px;
