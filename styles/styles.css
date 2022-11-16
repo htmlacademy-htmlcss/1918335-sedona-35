@@ -122,6 +122,7 @@ body {
   margin-right: 4px;
 }
 .navigation-link-user {
+  display: block;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -302,7 +303,7 @@ body {
 }
 .advantages-item-home::before {
   position: absolute;
-  bottom: 67px;
+  top: -105px;
   left: auto;
   width: 75px;
   height: 72px;
@@ -311,7 +312,7 @@ body {
 }
 .advantages-item-burger::before {
   position: absolute;
-  bottom: 67px;
+  top: -105px;
   left: 78px;
   width: 74px;
   height: 70px;
@@ -320,7 +321,7 @@ body {
 }
 .advantages-item-present::before {
   position: absolute;
-  bottom: 67px;
+  top: -105px;
   left: 83px;
   width: 64px;
   height: 76px;
@@ -414,7 +415,7 @@ body {
 }
 .newsletter-button {
   width: 232px;
-  height: 52px;
+  min-height: 52px;
   padding: 8px 50px;
   background-color: #82B3D3;
   border: none;
@@ -632,6 +633,17 @@ body {
   line-height: 24px;
   color: #000000;
 }
+.selection-form-data:hover {
+  background-color: #e6e6e6;
+}
+.selection-form-data:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+.selection-form-data:active {
+  background: #f2f2f2;
+  outline: 2px solid #000000;
+}
 .selection-form-calendar {
   width: 20px;
   border: none;
@@ -642,8 +654,20 @@ body {
   opacity: 0.3;
   cursor: pointer;
 }
-.selection-form-calendar:focus {
+.selection-form-calendar:hover {
+  background-color: #e6e6e6;
   outline: none;
+  opacity: unset;
+}
+.selection-form-calendar:focus {
+  outline: 3px solid #82b3d3;
+  background-color: #e6e6e6;
+  border-radius: 4px;
+  opacity: unset;
+}
+.selection-form-calendar:active {
+  outline: 3px solid #000000;
+  border-radius: 4px;
 }
 .selection-form-help {
   grid-area: help;
@@ -721,7 +745,7 @@ input[type="number"]:focus {
   margin: 0;
   padding: 0;
   cursor: pointer;
-  background: none;
+  background-color: #f2f2f2;
 }
 .amount-meter-icon {
   position: absolute;
@@ -730,16 +754,15 @@ input[type="number"]:focus {
   bottom: 0;
   left: 0;
   margin: auto;
-  min-width: 20px;
-  min-height: 20px;
-  padding: 14px 10px;
-  background-color: #f2f2f2;
+  width: 14px;
+  height: 14px;
+  padding: 3px;
   fill: rgba(117, 97, 87, 0.3);
 }
-.amount-meter-minus-icon {
+.amount-meter-minus {
   border-radius: 4px 0 0 4px;
 }
-.amount-meter-plus-icon {
+.amount-meter-plus {
   border-radius: 0 4px 4px 0;
 }
 .form-amount-childs {
@@ -747,17 +770,20 @@ input[type="number"]:focus {
   grid-template-columns: auto 110px;
   align-items: center;
 }
-.amount-meter-icon:hover {
+.amount-meter:hover .amount-meter-icon {
   fill: #000000;
 }
-.amount-meter-icon:focus {
+.amount-meter:focus .amount-meter-icon {
   fill: #000000;
+  outline: 3px solid #82b3d3;
+  border-radius: 4px;
 }
-.amount-meter:focus {
+.amount-meter:focus{
   outline: none;
 }
-.amount-meter-icon:active {
+.amount-meter:active .amount-meter-icon {
   fill: rgba(117, 97, 87, 0.3);
+  outline: none;
 }
 .form-caption-amount-caption {
   display: flex;

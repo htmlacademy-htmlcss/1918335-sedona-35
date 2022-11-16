@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
   <header class="main-header">
@@ -19,7 +20,7 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link" href="#">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -174,8 +175,8 @@
         <form class="selection-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="selection-form-square">
            <label class="selection-form-caption" for="selection-check-in">Дата заезда:</label>
-           <span class="selection-form-data">
-             <input class="selection-data" name="selection-check-in" id="selection-check-in" placeholder="27 апреля 2020">
+           <span tabindex="0" class="selection-form-data">
+             <input class="selection-data" name="selection-check-in" id="selection-check-in" placeholder="Укажите дату" value="27 апреля 2020">
              <button class="selection-form-calendar" type="button">
                <span class="visually-hidden">Выбрать дату заезда</span>
              </button>
@@ -184,8 +185,8 @@
           </div>
           <div class="selection-form-square">
             <label class="selection-form-caption" for="selection-departure">Дата выезда:</label>
-            <span class="selection-form-data">
-              <input class="selection-data" name="selection-departure" id="selection-departure" placeholder="1 сентября 2023">
+            <span tabindex="0" class="selection-form-data">
+              <input class="selection-data" name="selection-departure" id="selection-departure" placeholder="Укажите дату" value="1 сентября 2023">
               <button class="selection-form-calendar" type="button">
               <span class="visually-hidden">Выбрать дату выезда</span>
             </button>
