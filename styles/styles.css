@@ -268,6 +268,7 @@ body {
   padding-top: 103px;
   padding-bottom: 121px;
 }
+
 .advantages-item-title {
   position: relative;
   width: 175px;
@@ -565,7 +566,7 @@ body {
   outline: none;
 }
 
-.button-social:active .footer-social-icons{
+.button-social:active .footer-social-icons {
   fill: #82b3d3;
   opacity: 0.3;
 }
@@ -738,7 +739,6 @@ body {
   padding: 12px 20px;
   flex-grow: 1;
   border: none;
-  background: none;
   outline: none;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
