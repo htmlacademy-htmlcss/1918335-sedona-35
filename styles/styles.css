@@ -25,10 +25,17 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
+  height: 100%;
+  margin: 0;
+}
+
+.page-container {
   display: flex;
   flex-direction: column;
+  width: 1200px;
   min-height: 100%;
-  margin: 0;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -296,8 +303,13 @@ body {
 
 .advantages-item-description {
   color: #333333;
-  width: 230px;
+  max-width: 230px;
   margin: 0;
+}
+
+.advantages-item-home + .advantages-item-description {
+  margin-right: 115px;
+  margin-left: 115px;
 }
 
 .advantages-item-accent-text {
